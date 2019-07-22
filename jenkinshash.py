@@ -86,7 +86,9 @@ def hashlittle2(data, initval=0, initval2=0):
 
     a, b, c = final(a, b, c)
 
-    return c, b  # 这里是原版，您可以修改这里，返回不同的结果，例如py3写法(py2可能要注意int和long的转换)：return ((int(a)) << 24) | (int(b) & 0xFFFFFF)
+    return c, b  # 这里是原版，您可以修改这里，返回不同的结果，
+    # 例如py3写法(py2可能要注意int和long的转换)：
+    # return ((int(a)) << 24) | (int(b) & 0xFFFFFF)  # 这里返回的值是一个，后面的记得也相应修改
 
 
 def hashlittle(data, initval=0):
